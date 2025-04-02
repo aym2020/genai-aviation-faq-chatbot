@@ -7,13 +7,13 @@ Here’s your professional-grade `README.md`👇
 ### ✅ `README.md` (ready to copy-paste into your project)
 
 ```markdown
-# 🛫 GenAI Aviation FAQ Chatbot (EASA RAG)
+# GenAI Aviation FAQ Chatbot (EASA RAG)
 
 A production-ready Retrieval-Augmented Generation (RAG) chatbot built with LangChain, OpenAI, and Streamlit — designed to answer regulatory questions using the full EASA Air OPS PDF (2400+ pages). Deployed in a Docker container for easy portability and future integration with cloud platforms like Azure.
 
 ---
 
-## ✨ Features
+## Features
 
 - ✅ Full-document ingestion with `unstructured` PDF parsing
 - ✅ Hybrid Retrieval (FAISS vector search + BM25 keyword search)
@@ -26,7 +26,7 @@ A production-ready Retrieval-Augmented Generation (RAG) chatbot built with LangC
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 genai-aviation-faq-chatbot/
@@ -50,7 +50,7 @@ genai-aviation-faq-chatbot/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Install Requirements Locally
 
@@ -76,7 +76,7 @@ python src/ingest_docs.py
 
 ---
 
-## 🧠 Run the Chatbot (Locally)
+## Run the Chatbot (Locally)
 
 ```bash
 streamlit run app/streamlit_app.py
@@ -86,7 +86,7 @@ Then open: [http://localhost:8501](http://localhost:8501)
 
 ---
 
-## 🐳 Run with Docker (Production-Ready)
+## Run with Docker (Production-Ready)
 
 ### Build the container:
 
@@ -104,7 +104,7 @@ docker run -p 8501:8501 -v ${PWD}/embeddings:/app/embeddings --env-file .env avi
 
 ---
 
-## 💡 Technologies Used
+## Technologies Used
 
 | Stack | Tool |
 |-------|------|
@@ -119,7 +119,7 @@ docker run -p 8501:8501 -v ${PWD}/embeddings:/app/embeddings --env-file .env avi
 
 ---
 
-## ✈️ Example Questions
+##  Example Questions
 
 - When can a commander extend the flight duty period?
 - What are the rest requirements after a long-haul duty?
@@ -128,7 +128,7 @@ docker run -p 8501:8501 -v ${PWD}/embeddings:/app/embeddings --env-file .env avi
 
 ---
 
-## 📌 Notes
+## Notes
 
 - You only need to embed the document once (`src/ingest_docs.py`)
 - Embeddings are cached in `/embeddings`
@@ -137,15 +137,6 @@ docker run -p 8501:8501 -v ${PWD}/embeddings:/app/embeddings --env-file .env avi
 
 ---
 
-## 🔭 Roadmap (v2 Ideas)
-
-- [ ] Upload multiple PDFs
-- [ ] Chat history & feedback tracking
-- [ ] Azure App Service or Container Instances deployment
-- [ ] Admin analytics dashboard
-
----
-
-## 🧑‍✈️ Author
+## Author
 
 Built by [@aym2020](https://github.com/aym2020) for aviation compliance R&D using GenAI and RAG techniques.
