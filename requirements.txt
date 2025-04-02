@@ -1,0 +1,15 @@
+langchain
+langchain-openai
+faiss-cpu
+openai
+pypdf
+python-dotenv
+langchain-community
+tiktoken
+rank_bm25
+sentence-transformers
+unstructured[pdf]
+pdfminer.six
+pi-heif
+spacy==2.3.5
+streamlit
