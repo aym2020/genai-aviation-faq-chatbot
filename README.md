@@ -1,5 +1,3 @@
-### ✅ `README.md`
-
 # GenAI Aviation FAQ Chatbot (EASA RAG)
 
 A production-ready Retrieval-Augmented Generation (RAG) chatbot built with LangChain, OpenAI, and Streamlit — designed to answer regulatory questions using the full EASA Air OPS PDF (2400+ pages). Deployed in a Docker container for easy portability and future integration with cloud platforms like Azure.
