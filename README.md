@@ -35,7 +35,7 @@ genai-aviation-faq-chatbot/
 │   └── streamlit_app.py
 │
 ├── data/                 # Raw PDFs (e.g., EASA Air OPS)
-├── embeddings/           # FAISS index & metadata cache
+├── embeddings/           # FAISS index & metadata cache (⚠️ not tracked in Git)
 ├── src/                  # Ingestion & RAG logic
 │   ├── ingest_docs.py
 │   ├── rag_chain.py
@@ -133,6 +133,7 @@ docker run -p 8501:8501 -v ${PWD}/embeddings:/app/embeddings --env-file .env avi
 - You only need to embed the document once (`src/ingest_docs.py`)
 - Embeddings are cached in `/embeddings`
 - OpenAI GPT-4o used via `langchain-openai` with clean prompt engineering
+- ⚠️ FAISS files are **not pushed to GitHub** due to size limits. Regenerate locally using the ingestion script.
 
 ---
 

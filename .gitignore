@@ -2,3 +2,7 @@
 __pycache__/
 *.pyc
 .env
+
+# FAISS index files
+embeddings/index.faiss
+embeddings/index.pkl
