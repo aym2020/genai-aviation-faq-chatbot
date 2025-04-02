@@ -1,12 +1,5 @@
-Perfect — since Azure wasn’t needed in this project, we’ll keep the README Azure-neutral but you can always extend to **Azure Container Instances**, **App Services**, or **Azure Kubernetes Service (AKS)** later if needed.
+### ✅ `README.md`
 
-Here’s your professional-grade `README.md`👇
-
----
-
-### ✅ `README.md` (ready to copy-paste into your project)
-
-```markdown
 # GenAI Aviation FAQ Chatbot (EASA RAG)
 
 A production-ready Retrieval-Augmented Generation (RAG) chatbot built with LangChain, OpenAI, and Streamlit — designed to answer regulatory questions using the full EASA Air OPS PDF (2400+ pages). Deployed in a Docker container for easy portability and future integration with cloud platforms like Azure.
@@ -28,7 +21,21 @@ A production-ready Retrieval-Augmented Generation (RAG) chatbot built with LangC
 
 ## Project Structure
 
-<pre lang="text"><code>```text genai-aviation-faq-chatbot/ ├── app/ # Streamlit UI │ └── streamlit_app.py ├── data/ # Raw PDFs (e.g., EASA Air OPS) ├── embeddings/ # FAISS index & metadata cache (⚠️ not tracked in Git) ├── src/ # Ingestion & RAG logic │ ├── ingest_docs.py │ ├── rag_chain.py │ └── config.py ├── Dockerfile # Docker build ├── requirements.txt ├── .env # OpenAI key, etc. ├── README.md └── main.py # CLI question tool ```</code></pre>
+```
+text genai-aviation-faq-chatbot/
+├── app/ # Streamlit UI
+│ └── streamlit_app.py
+├── data/ # Raw PDFs (e.g., EASA Air OPS) 
+├── embeddings/ # FAISS index & metadata cache (⚠️ not tracked in Git) 
+├── src/ # Ingestion & RAG logic 
+│ ├── ingest_docs.py 
+│ ├── rag_chain.py 
+│ └── config.py ├── Dockerfile # Docker build 
+├── requirements.txt 
+├── .env # OpenAI key, etc. 
+├── README.md └── main.py # CLI question tool
+```
+
 ---
 
 ## Getting Started
