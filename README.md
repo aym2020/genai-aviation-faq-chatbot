@@ -112,6 +112,8 @@ docker run -p 8501:8501 -v ${PWD}/embeddings:/app/embeddings --env-file .env avi
 - What navigation systems must be operational before departure?
 - What is the operator's responsibility for fuel planning?
 
+![image](https://github.com/user-attachments/assets/0c23ec70-a88a-4252-b63a-e1824213417e)
+
 ---
 
 ## Notes
