@@ -28,26 +28,7 @@ A production-ready Retrieval-Augmented Generation (RAG) chatbot built with LangC
 
 ## Project Structure
 
-```
-genai-aviation-faq-chatbot/
-│
-├── app/                  # Streamlit UI
-│   └── streamlit_app.py
-│
-├── data/                 # Raw PDFs (e.g., EASA Air OPS)
-├── embeddings/           # FAISS index & metadata cache (⚠️ not tracked in Git)
-├── src/                  # Ingestion & RAG logic
-│   ├── ingest_docs.py
-│   ├── rag_chain.py
-│   └── config.py
-│
-├── Dockerfile            # Docker build
-├── requirements.txt
-├── .env                  # OpenAI key, etc.
-├── README.md
-└── main.py               # CLI question tool
-```
-
+<pre lang="text"><code>```text genai-aviation-faq-chatbot/ ├── app/ # Streamlit UI │ └── streamlit_app.py ├── data/ # Raw PDFs (e.g., EASA Air OPS) ├── embeddings/ # FAISS index & metadata cache (⚠️ not tracked in Git) ├── src/ # Ingestion & RAG logic │ ├── ingest_docs.py │ ├── rag_chain.py │ └── config.py ├── Dockerfile # Docker build ├── requirements.txt ├── .env # OpenAI key, etc. ├── README.md └── main.py # CLI question tool ```</code></pre>
 ---
 
 ## Getting Started
