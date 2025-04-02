@@ -6,7 +6,6 @@ from langchain.docstore.document import Document
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.vectorstores import FAISS
-from langchain.text_splitter import SpacyTextSplitter
 import logging
 
 logging.getLogger("unstructured").setLevel(logging.ERROR)

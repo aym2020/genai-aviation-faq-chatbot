@@ -32,6 +32,12 @@ def load_retriever(embedding_dir="embeddings"):
     )
     return hybrid
 
+def inject_page_numbers(docs):
+    return "\n\n".join(
+        f"[Page {doc.metadata.get('page_number', 'N/A')}]\n{doc.page_content}"
+        for doc in docs
+    )
+
 def rerank_chunks(query, docs, top_k=5):
     pairs = [[query, doc.page_content] for doc in docs]
     scores = reranker.predict(pairs)

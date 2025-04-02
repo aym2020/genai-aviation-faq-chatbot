@@ -1,0 +1,8 @@
+# .dockerignore
+.env
+**/.env
+**/__pycache__
+**/.git
+**/.venv
+**/data
+**/embeddings
